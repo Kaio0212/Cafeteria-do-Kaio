@@ -1,0 +1,400 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+header {
+   background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
+   color: white;
+   padding: 0 2rem;
+   height: 4.8rem;
+   display: grid;
+   align-items: center;
+}
+
+.container-header {
+   padding: 0.5rem 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.div-logo {
+   display: flex;
+   margin: 0 10px;
+}
+
+.div-logo a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+
+   font-size: 2rem;
+   line-height: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   letter-spacing: 0.05em;
+   padding: 0 20px 5px 0;
+   font-family: "Pacifico", cursive;
+}
+
+.div-logo-img {
+   width: 3.5rem;
+   border-radius: 50%;
+}
+
+.div-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+   padding: 5px;
+}
+
+.diasAberto {
+   background-color: rgb(2, 175, 2);
+   padding: 4px 10px;
+   border-radius: 8px;
+   margin-top: 5px;
+}
+
+.button-list {
+   background-color: #784538;
+   border: none;
+   border-radius: 20px;
+   padding: 5px 1rem;
+   color: white;
+   font-size: 1rem;
+}
+
+.button-list:hover {
+   transform: scale(1.05);
+   transition-duration: 200ms;
+   cursor: pointer;
+}
+
+.menu-list {
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   gap: 2rem;
+}
+
+.menu-link {
+   text-decoration: none;
+   color: #ffffffb3;
+   display: inline-block;
+
+   font-size: 1.25rem;
+   line-height: 1.75rem;
+}
+
+.menu-link:hover {
+   color: white;
+   transition-duration: 500ms;
+}
+
+.img-button-links {
+   margin-left: 5px;
+}
+
+
+main {
+   min-height: 600px;
+   padding: 0 50px;
+   background-color: #270c03;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+.container-home {
+   margin: 0 auto;
+   padding: 3rem;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   text-align: center;
+}
+
+.div-text-home {
+   text-align: start;
+}
+
+.h1-text-home {
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+.span-h1-home {
+   font-family: "Pacifico", cursive;
+   color: #854d3d;
+}
+
+.button-home {
+   background: linear-gradient(to right, #854d3d, #4a1e1b);
+   border: 2px solid #854d3d;
+   padding: 0.5rem 1rem;
+   border-radius: 9999px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   transition: transform 0.2s ease-in-out;
+
+   cursor: pointer;
+
+   &:hover {
+      transform: scale(1.05);
+   }
+}
+
+.img-home {
+   width: 550px;
+   transform: scale(1.25);
+   animation: balanco 5s linear infinite;
+}
+
+@keyframes balanco {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(15deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+.section-services {
+   padding: 2.5rem 3rem;
+   margin: 0 auto;
+   min-height: 600px;
+}
+
+.container-services {
+   text-align: center;
+   margin: 0 auto 5rem;
+   padding: 0 3rem;
+}
+
+.tittle-section-services {
+   font-size: 2.25rem;
+   font-weight: bold;
+   font-family: "Pacifico", cursive;
+   color: #2d3748;
+}
+
+.div-card {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.25rem;
+   place-items: center;
+}
+
+.service-card {
+   border-radius: 1rem;
+   background-color: white;
+   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+   transition: all 0.5s ease;
+   max-width: 300px;
+   position: relative;
+}
+
+.service-card:hover {
+   background-color: #854d3d;
+   color: white;
+}
+
+.div-card-image {
+   height: 122px;
+}
+
+.image-card {
+   max-width: 200px;
+   display: block;
+   margin: 0 auto;
+   transform: translateY(-3.5rem);
+   transition: transform 0.3s ease;
+}
+
+.service-card:hover .image-card {
+   transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
+}
+
+.div-text-services-card {
+   padding: 1rem;
+   text-align: center;
+}
+
+.h1-card-service {
+   font-size: 1.25rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   text-align: center;
+}
+
+.p-card-service {
+   color: #6b7280;
+   transition: all 0.7s ease;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   text-align: center;
+   margin-bottom: 1rem;
+
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   line-clamp: 2;
+   -webkit-line-clamp: 2;
+}
+
+.service-card:hover .p-card-service {
+   color: #ffffff;
+}
+
+
+footer {
+   background-color: #270c03;
+   min-height: 150px;
+   padding: 1rem;
+}
+
+.div-logo-footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.p-footer {
+   color: white;
+   margin: 1rem;
+}
+
+
+
+@media screen and (max-width: 871px) {
+   .div-logo a {
+      font-size: 1.4rem;
+   }
+
+   .menu-list {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   header {
+      padding: 0;
+   }
+
+   .div-logo a {
+      font-size: 1.5rem;
+   }
+}
+
+@media screen and (max-width: 1137px) {
+   .h1-text-home {
+      font-size: 3.4rem;
+   }
+}
+
+@media screen and (max-width: 1069px) {
+   .h1-text-home {
+      font-size: 3.2rem;
+   }
+}
+
+@media screen and (max-width: 1035px) {
+   .h1-text-home {
+      font-size: 3.1rem;
+   }
+
+   .img-home {
+      width: 450px;
+   }
+}
+
+@media screen and (max-width: 960px) {
+   main {
+      min-height: 550px;
+   }
+
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .div-text-home {
+      text-align: center;
+   }
+
+   .h1-text-home {
+      font-size: 3.6rem;
+   }
+
+   .img-home {
+      width: 400px;
+   }
+}
+
+
+@media screen and (max-width: 600px) {
+   .container-home {
+      padding: 50px 0;
+   }
+
+   .h1-text-home {
+      font-size: 3rem;
+   }
+
+   .img-home {
+      width: 350px;
+   }
+}
+
+@media screen and (max-width: 460px) {
+   .h1-text-home {
+      font-size: 2.2rem;
+   }
+
+   .img-home {
+      width: 250px;
+   }
+}
+
+
+@media screen and (max-width: 740px) {
+   .div-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3.5rem;
+   }
+}
+
+@media screen and (max-width: 552px) {
+   .div-card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3.5rem;
+   }
+}
